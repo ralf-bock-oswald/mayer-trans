@@ -1,0 +1,43 @@
+.legal {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  min-height: 60vh;
+}
+
+.legal .eyebrow {
+  color: var(--red);
+}
+
+.legal h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 0.4em;
+}
+
+.legal h2 {
+  font-size: 1.3rem;
+  margin-top: 2em;
+}
+
+.legal p,
+.legal li {
+  color: var(--gray);
+}
+
+.legal ul {
+  padding-left: 1.2em;
+}
+
+.legal a {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.legal__placeholder {
+  color: var(--red-dark);
+  font-style: italic;
+}
+
+.legal__intro {
+  max-width: 720px;
+  margin-bottom: 2em;
+}

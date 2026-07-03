@@ -1,0 +1,76 @@
+.fleet {
+  background: var(--black);
+}
+
+.fleet .eyebrow {
+  color: var(--red);
+}
+
+.fleet .section-head h2 {
+  color: var(--white);
+}
+
+.fleet .section-head p {
+  color: #b3b3b3;
+}
+
+.fleet__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fleet__item {
+  margin: 0;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.fleet__item.wide {
+  grid-column: span 2;
+}
+
+.fleet__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.fleet__item:hover img {
+  transform: scale(1.05);
+}
+
+.fleet__item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .fleet__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fleet__item.wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .fleet__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fleet__item.wide {
+    grid-column: span 1;
+  }
+}
