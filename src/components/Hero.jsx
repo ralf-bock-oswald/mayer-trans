@@ -7,10 +7,10 @@ function Hero() {
     <section className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
       <div className="hero__overlay" />
       <div className="container hero__content">
-        <span className="eyebrow eyebrow--light">Seit 1967 &middot; Familienunternehmen</span>
+        <span className="eyebrow eyebrow--light">Familienunternehmen seit 1967</span>
         <h1>
           Transporte, Erdarbeiten &amp;<br />
-          Straßenreinigung aus Maissau
+          Straßenreinigung aus Limberg
         </h1>
         <p>
           Die Josef Mayer KG ist seit über 55 Jahren verlässlicher Partner für Gemeinden,

@@ -19,7 +19,7 @@ function Footer() {
 
         <div className="site-footer__col">
           <h4>Kontakt</h4>
-          <p>Schlossstraße 10<br />3712 Maissau</p>
+          <p>Schlossstraße 10<br />Limberg<br />3712 Maissau</p>
           <p>
             <a href="tel:+43295884160">Tel. 02958 / 84160</a>
             <br />
@@ -30,9 +30,9 @@ function Footer() {
         <div className="site-footer__col">
           <h4>Navigation</h4>
           <ul>
-            <li><Link to="/#ueber-uns">Über uns</Link></li>
             <li><Link to="/#leistungen">Leistungen</Link></li>
             <li><Link to="/#fuhrpark">Fuhrpark</Link></li>
+            <li><Link to="/#ueber-uns">Über uns</Link></li>
             <li><Link to="/#kontakt">Kontakt</Link></li>
           </ul>
         </div>

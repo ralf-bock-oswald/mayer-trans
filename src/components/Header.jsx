@@ -5,9 +5,9 @@ import MayerTransWordmark from './MayerTransWordmark.jsx'
 import './Header.css'
 
 const NAV_LINKS = [
-  { label: 'Über uns', hash: '#ueber-uns' },
   { label: 'Leistungen', hash: '#leistungen' },
   { label: 'Fuhrpark', hash: '#fuhrpark' },
+  { label: 'Über uns', hash: '#ueber-uns' },
   { label: 'Kontakt', hash: '#kontakt' },
 ]
 

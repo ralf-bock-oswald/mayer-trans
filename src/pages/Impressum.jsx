@@ -13,6 +13,7 @@ function Impressum() {
           Josef Mayer KG<br />
           Transporte &middot; Erdarbeiten &middot; Straßenreinigung<br />
           Schlossstraße 10<br />
+          Limberg<br />
           3712 Maissau<br />
           Österreich
         </p>

@@ -16,7 +16,7 @@ function Datenschutz() {
         <h2>Verantwortlicher</h2>
         <p>
           Josef Mayer KG<br />
-          Schlossstraße 10, 3712 Maissau<br />
+          Schlossstraße 10, Limberg, 3712 Maissau<br />
           Telefon: 02958 / 84160
         </p>
 
@@ -80,7 +80,7 @@ function Datenschutz() {
         <h2>Kontakt für Datenschutzanliegen</h2>
         <p>
           Bei Fragen zum Datenschutz wenden Sie sich bitte an: Josef Mayer KG,
-          Schlossstraße 10, 3712 Maissau, Telefon 02958 / 84160.
+          Schlossstraße 10, Limberg, 3712 Maissau, Telefon 02958 / 84160.
         </p>
       </div>
     </section>

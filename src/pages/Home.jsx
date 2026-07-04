@@ -20,9 +20,9 @@ function Home() {
   return (
     <>
       <Hero />
-      <About />
       <Services />
       <Fleet />
+      <About />
       <Contact />
     </>
   )
