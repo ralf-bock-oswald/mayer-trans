@@ -22,14 +22,23 @@ function Datenschutz() {
 
         <h2>Hosting</h2>
         <p>
-          Diese Website wird bei Netlify (Netlify, Inc., 44 Montgomery Street,
-          Suite 300, San Francisco, CA 94104, USA) gehostet. Beim Aufruf der
-          Website werden automatisch technische Zugriffsdaten (sogenannte
-          Server-Logfiles) an den Hosting-Anbieter übermittelt, etwa
-          IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite und
-          verwendeter Browser. Diese Daten dienen ausschließlich dem sicheren
-          und stabilen Betrieb der Website und werden nicht mit anderen Daten
-          zusammengeführt.
+          Diese Website wird bei GitHub Pages (GitHub, Inc., 88 Colin P.
+          Kelly Jr. Street, San Francisco, CA 94107, USA) gehostet. Beim
+          Aufruf der Website werden automatisch technische Zugriffsdaten
+          (sogenannte Server-Logfiles) an den Hosting-Anbieter übermittelt,
+          etwa IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite
+          und verwendeter Browser. Diese Daten dienen ausschließlich dem
+          sicheren und stabilen Betrieb der Website und werden nicht mit
+          anderen Daten zusammengeführt. Weitere Informationen finden Sie in
+          der{' '}
+          <a
+            href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Datenschutzerklärung von GitHub
+          </a>
+          .
         </p>
 
         <h2>Google Maps</h2>

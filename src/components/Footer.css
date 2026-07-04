@@ -1,6 +1,6 @@
 .site-footer {
   background: var(--black);
-  color: #cfcfcf;
+  color: #d9cdc9;
 }
 
 .site-footer__inner {
@@ -32,7 +32,7 @@
 .site-footer__brand p {
   margin: 8px 0 0;
   font-size: 0.9rem;
-  color: #9a9a9a;
+  color: #a89c98;
 }
 
 .site-footer h4 {
@@ -63,10 +63,10 @@
 }
 
 .site-footer__bottom {
-  border-top: 1px solid #2a2a2a;
+  border-top: 1px solid #3a2b26;
   padding: 18px 0;
   font-size: 0.82rem;
-  color: #8a8a8a;
+  color: #948885;
 }
 
 @media (max-width: 900px) {

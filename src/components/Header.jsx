@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import MayerTransWordmark from './MayerTransWordmark.jsx'
 import './Header.css'
@@ -14,6 +14,8 @@ const NAV_LINKS = [
 function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const { pathname } = useLocation()
+  const isHome = pathname === '/'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -22,7 +24,7 @@ function Header() {
   }, [])
 
   return (
-    <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`site-header ${scrolled || !isHome ? 'scrolled' : ''}`}>
       <div className="container site-header__inner">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
           <img src={logo} alt="" className="brand__logo" />

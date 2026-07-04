@@ -1,12 +1,13 @@
 :root {
   --red: #c8102e;
   --red-dark: #8f0c20;
-  --black: #141414;
-  --black-soft: #1f1f1f;
-  --gray: #4a4a4a;
-  --gray-light: #f4f4f4;
+  --black: #1c1412;
+  --black-soft: #2a1e1a;
+  --gray: #5c514e;
+  --gray-light: #f2e9e6;
+  --surface: #faf6f4;
   --white: #ffffff;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --shadow: 0 10px 30px rgba(20, 8, 6, 0.3);
   --radius: 6px;
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
@@ -21,7 +22,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--white);
+  background: var(--surface);
   color: var(--black);
   line-height: 1.6;
 }
@@ -60,6 +61,11 @@ h1, h2, h3, h4 {
 
 section {
   padding: 90px 0;
+}
+
+section + section,
+footer {
+  border-top: 4px solid var(--red);
 }
 
 .btn {

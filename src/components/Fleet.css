@@ -11,7 +11,7 @@
 }
 
 .fleet .section-head p {
-  color: #b3b3b3;
+  color: #bcaeaa;
 }
 
 .fleet__grid {
@@ -49,7 +49,7 @@
   right: 0;
   bottom: 0;
   padding: 16px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  background: linear-gradient(to top, rgba(18, 10, 9, 0.85), transparent);
   color: var(--white);
   font-size: 0.9rem;
   font-weight: 600;
