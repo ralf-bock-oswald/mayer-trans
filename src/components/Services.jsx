@@ -31,20 +31,26 @@ function Services() {
   return (
     <section id="leistungen" className="services">
       <div className="container">
-        <div className="section-head center">
+        <div className="section-head center" data-reveal>
           <span className="eyebrow">Leistungen</span>
           <h2>Alles aus einer Hand</h2>
           <p>
-            Von der Baustoffzustellung bis zur professionellen Straßenreinigung &ndash;
+            Von der Baustoffzustellung bis zur professionellen Straßenreinigung –
             wir sind Ihr Partner für Transporte und Tiefbau in der Region.
           </p>
         </div>
 
         <div className="services__grid">
-          {SERVICES.map((service) => (
-            <article className="service-card" key={service.title}>
+          {SERVICES.map((service, i) => (
+            <article
+              className="service-card"
+              key={service.title}
+              data-reveal
+              style={{ '--reveal-delay': `${i * 110}ms` }}
+            >
               <div className="service-card__img">
-                <img src={service.img} alt={service.title} />
+                <span className="service-card__num">{String(i + 1).padStart(2, '0')}</span>
+                <img src={service.img} alt={service.title} loading="lazy" />
               </div>
               <h3>{service.title}</h3>
               <p>{service.text}</p>

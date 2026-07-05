@@ -13,18 +13,26 @@ const NAV_LINKS = [
 
 function Header() {
   const [scrolled, setScrolled] = useState(false)
+  const [progress, setProgress] = useState(0)
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
   const isHome = pathname === '/'
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', onScroll)
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20)
+      const doc = document.documentElement
+      const max = doc.scrollHeight - doc.clientHeight
+      setProgress(max > 0 ? (doc.scrollTop / max) * 100 : 0)
+    }
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
     <header className={`site-header ${scrolled || !isHome ? 'scrolled' : ''}`}>
+      <div className="scroll-progress" style={{ width: `${progress}%` }} />
       <div className="container site-header__inner">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
           <img src={logo} alt="" className="brand__logo" />

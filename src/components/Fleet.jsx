@@ -15,7 +15,7 @@ function Fleet() {
   return (
     <section id="fuhrpark" className="fleet">
       <div className="container">
-        <div className="section-head center">
+        <div className="section-head center" data-reveal>
           <span className="eyebrow">Fuhrpark</span>
           <h2>Moderne Fahrzeuge, gewachsener Betrieb</h2>
           <p>
@@ -25,8 +25,13 @@ function Fleet() {
         </div>
 
         <div className="fleet__grid">
-          {IMAGES.map((image) => (
-            <figure className={`fleet__item ${image.className || ''}`} key={image.src}>
+          {IMAGES.map((image, i) => (
+            <figure
+              className={`fleet__item ${image.className || ''}`}
+              key={image.src}
+              data-reveal
+              style={{ '--reveal-delay': `${i * 110}ms` }}
+            >
               <img src={image.src} alt={image.caption} loading="lazy" />
               <figcaption>{image.caption}</figcaption>
             </figure>

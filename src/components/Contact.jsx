@@ -9,14 +9,14 @@ function Contact() {
   return (
     <section id="kontakt" className="contact">
       <div className="container">
-        <div className="section-head center">
+        <div className="section-head center" data-reveal>
           <span className="eyebrow">Kontakt</span>
           <h2>Sprechen wir über Ihr Projekt</h2>
           <p>Ob Transport, Erdarbeiten oder Straßenreinigung – rufen Sie uns an oder besuchen Sie uns in Limberg.</p>
         </div>
 
         <div className="contact__grid">
-          <div className="contact__card">
+          <div className="contact__card" data-reveal="left">
             <h3>Josef Mayer KG</h3>
             <p className="contact__label">Adresse</p>
             <p>Schlossstraße 10<br />Limberg<br />3712 Maissau</p>
@@ -40,7 +40,7 @@ function Contact() {
             </a>
           </div>
 
-          <div className="contact__map">
+          <div className="contact__map" data-reveal="right">
             <iframe
               title="Standort Josef Mayer KG"
               src={MAPS_EMBED_SRC}

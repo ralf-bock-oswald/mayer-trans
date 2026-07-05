@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Hero from '../components/Hero.jsx'
+import Marquee from '../components/Marquee.jsx'
 import About from '../components/About.jsx'
 import Services from '../components/Services.jsx'
 import Fleet from '../components/Fleet.jsx'
@@ -20,6 +21,7 @@ function Home() {
   return (
     <>
       <Hero />
+      <Marquee />
       <Services />
       <Fleet />
       <About />

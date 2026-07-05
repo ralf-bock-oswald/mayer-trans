@@ -1,7 +1,7 @@
 .about__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 72px;
   align-items: center;
 }
 
@@ -13,41 +13,91 @@
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
 }
 
 .about__img--sub {
   position: absolute;
-  bottom: -32px;
-  right: -32px;
-  width: 58%;
-  border: 6px solid var(--white);
+  bottom: -36px;
+  right: -36px;
+  width: 62%;
+  border: 6px solid var(--surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 
-.about__text .eyebrow {
-  color: var(--red);
-}
-
 .about__text h2 {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.9rem, 3.4vw, 2.7rem);
 }
 
-.about__text p {
+.about__text > p {
   color: var(--gray);
 }
 
+.about__timeline {
+  list-style: none;
+  margin: 36px 0;
+  padding: 0;
+  position: relative;
+}
+
+.about__timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--red), #d8c7c2);
+}
+
+.about__timeline li {
+  position: relative;
+  padding: 0 0 22px 34px;
+}
+
+.about__timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.about__timeline li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 4px rgba(200, 16, 46, 0.16);
+}
+
+.about__timeline strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--red);
+  line-height: 1.2;
+}
+
+.about__timeline span {
+  color: var(--gray);
+  font-size: 0.98rem;
+}
+
 .about__quote {
-  margin-top: 28px;
+  margin-top: 30px;
   padding-left: 20px;
   border-left: 4px solid var(--red);
   font-style: italic;
-  font-size: 1.1rem;
-  color: var(--black) !important;
+  font-size: 1.12rem;
+  color: var(--black);
 }
 
 .about__quote span {
@@ -61,11 +111,15 @@
 @media (max-width: 900px) {
   .about__grid {
     grid-template-columns: 1fr;
-    gap: 90px;
+    gap: 96px;
+  }
+
+  .about__img--main {
+    aspect-ratio: 4 / 3;
   }
 
   .about__img--sub {
-    bottom: -40px;
+    bottom: -44px;
     right: 16px;
   }
 }

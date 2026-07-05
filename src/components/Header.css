@@ -10,9 +10,20 @@
 }
 
 .site-header.scrolled {
-  background: var(--black);
+  background: rgba(28, 20, 18, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   padding: 10px 0;
+}
+
+.scroll-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--red);
+  transition: width 0.1s linear;
 }
 
 .site-header__inner {
@@ -49,16 +60,33 @@
 }
 
 .nav a {
+  position: relative;
   color: var(--white);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
   opacity: 0.9;
   transition: opacity 0.2s ease, color 0.2s ease;
 }
 
+.nav a:not(.nav__cta)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: var(--red);
+  transition: width 0.25s ease;
+}
+
 .nav a:hover {
   opacity: 1;
-  color: var(--red);
+}
+
+.nav a:not(.nav__cta):hover::after {
+  width: 100%;
 }
 
 .nav__cta {
